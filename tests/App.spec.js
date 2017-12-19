@@ -3,7 +3,7 @@ import createStore from 'unistore'
 import render from 'preact-render-to-string';
 import htmlLooksLike from 'html-looks-like';
 
-import Count from '../Count'
+import Counter from '../Counter'
 
 let store = createStore({ count: 0 })
 
@@ -26,7 +26,7 @@ const App = () => (
   <div>
     <button onClick={() => increment()}>Increment</button>
     <button onClick={() => incrementAsync()}>Async Increment</button>
-    <Count count={0}/>
+    <Counter count={0}/>
     <button onClick={() => decrement()}>Decrement</button>
     <button onClick={() => decrementAndLog()}>Decrement with Log</button>
   </div>
