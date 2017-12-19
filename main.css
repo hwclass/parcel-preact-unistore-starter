@@ -1,0 +1,48 @@
+body {
+  color: #444;
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+  background: #fefefe;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+a:visited {
+  color: #0645ad;
+}
+
+header .logo {
+  padding: 0 15px;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #ecab82;
+  color: #E7DACB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  z-index: 500;
+}
+
+header .links a {
+  color: #E7DACB;
+  text-decoration: none;
+  padding-right: 20px;
+  font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

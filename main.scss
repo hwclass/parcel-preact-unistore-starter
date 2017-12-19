@@ -1,0 +1,21 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #21374B;
+  color: #E7DACB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  z-index: 500;
+
+  .links {
+    a {
+      color: #E7DACB;
+      text-decoration: none;
+      padding-right: 20px;
+      font-family: "Gill Sans", "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+}
