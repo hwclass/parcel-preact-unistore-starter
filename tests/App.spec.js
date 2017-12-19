@@ -33,7 +33,7 @@ const App = () => (
 )
 
 describe('App', () => {
-  it('has count', () => {
+  it('has the DOM tree correctly', () => {
     const actual = render(<App />);
     const expected = `
       <div>
