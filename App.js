@@ -2,6 +2,7 @@ import { h } from 'preact'
 import createStore from 'unistore'
 import { Provider, connect } from 'unistore/preact'
 
+import Count from './Count'
 import './main.css'
 
 let store = createStore({ count: 0 })
@@ -28,7 +29,7 @@ const App = connect('count', actions)(
     <div>
       <button onClick={increment}>Increment</button>
       <button onClick={incrementAsync}>Async Increment</button>
-      <p>Count: {count}</p>
+      <Count count={count}/>
       <button onClick={decrement}>Decrement</button>
       <button onClick={decrementAndLog}>Decrement with Log</button>
     </div>
