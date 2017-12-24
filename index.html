@@ -1,5 +1,19 @@
 <html>
+  <head>
+    <title>Parcel Preact Unistore Starter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#673ab8">
+    <link rel="manifest" href="manifest.json">
+  </head>
   <body>
     <script src="./index.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('sw.js');
+        });
+      }
+    </script>
   </body>
 </html>
