@@ -1,0 +1,7 @@
+language: node_js
+nvm:
+ - 8.0.0
+
+install:
+  - npm install
+  - npm run test
