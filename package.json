@@ -1,7 +1,7 @@
 {
   "name": "parcel-preact-unistore-starter",
   "version": "0.0.1",
-  "description": "Starter pack for lightning-fast prototyping and small/medium size project structure",
+  "description": "Starter pack for lightning-fast prototyping and small/medium size project structures",
   "main": "index.js",
   "engines": {
     "node": ">=8.0.0",
