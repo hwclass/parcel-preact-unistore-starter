@@ -3,6 +3,7 @@ import createStore from 'unistore'
 import render from 'preact-render-to-string';
 import htmlLooksLike from 'html-looks-like';
 
+import Header from '../Header'
 import Counter from '../Counter'
 
 let store = createStore({ count: 0 })

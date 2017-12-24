@@ -13,7 +13,8 @@
     "prod": "parcel build index.js",
     "test": "jest",
     "lint": "eslint . --cache --fix",
-    "prettify": "prettier --single-quote --trailing-comma all --write ./**/*.js"
+    "prettify": "prettier --single-quote --trailing-comma all --write ./**/*.js",
+    "posthtml": "posthtml -o output.html -i index.html"
   },
   "author": "Baris Guler <harderworking.class@gmail.com>",
   "license": "MIT",
@@ -26,6 +27,7 @@
     "autoprefixer": "^7.2.3",
     "node-sass": "^4.7.2",
     "postcss-modules": "^1.1.0",
+    "posthtml-cli": "^0.3.1",
     "babel-eslint": "^8.0.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-preact": "^1.1.0",
@@ -34,9 +36,17 @@
     "html-looks-like": "^1.0.3",
     "jest": "^22.0.1",
     "parcel-bundler": "^1.2.1",
+    "post-load-plugins": "0.0.16",
     "posthtml": "^0.11.0",
     "posthtml-img-autosize": "^0.1.1",
     "preact-render-to-string": "^3.7.0",
     "prettier": "^1.9.2"
+  },
+  "posthtml": {
+    "plugins": {
+      "posthtml-img-autosize": {
+        "root": "./images"
+      }
+    }
   }
 }

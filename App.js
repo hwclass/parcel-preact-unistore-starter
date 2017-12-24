@@ -2,6 +2,8 @@ import { h } from 'preact'
 import createStore from 'unistore'
 import { Provider, connect } from 'unistore/preact'
 
+import Header from './Header'
+import Image from './Image'
 import Counter from './Counter'
 import './main.css'
 
@@ -24,14 +26,16 @@ let actions = store => ({
   }
 })
 
-const App = connect('count', actions)(
+export const App = connect('count', actions)(
   ({ count, increment, incrementAsync, decrement, decrementAndLog }) => (
     <div>
+      <Header/>
       <button onClick={increment}>Increment</button>
       <button onClick={incrementAsync}>Async Increment</button>
       <Counter count={count}/>
       <button onClick={decrement}>Decrement</button>
       <button onClick={decrementAndLog}>Decrement with Log</button>
+      <Image url="./images/funny_cat.jpg"/>
     </div>
   )
 )
