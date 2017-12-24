@@ -18,14 +18,14 @@
   "author": "Baris Guler <harderworking.class@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "autoprefixer": "^7.2.3",
-    "node-sass": "^4.7.2",
-    "postcss-modules": "^1.1.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.17.0",
     "unistore": "^3.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "node-sass": "^4.7.2",
+    "postcss-modules": "^1.1.0",
     "babel-eslint": "^8.0.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-preact": "^1.1.0",
