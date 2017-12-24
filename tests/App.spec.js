@@ -5,7 +5,6 @@ import htmlLooksLike from 'html-looks-like';
 
 import Header from '../Header'
 import Counter from '../Counter'
-import { App } from '../App'
 
 let store = createStore({ count: 0 })
 
@@ -24,15 +23,15 @@ const decrementAndLog = ({ count }, event) => {
   return { count: count - 1 }
 }
 
-// const App = () => (
-//   <div>
-//     <button onClick={() => increment()}>Increment</button>
-//     <button onClick={() => incrementAsync()}>Async Increment</button>
-//     <Counter count={0}/>
-//     <button onClick={() => decrement()}>Decrement</button>
-//     <button onClick={() => decrementAndLog()}>Decrement with Log</button>
-//   </div>
-// )
+const App = () => (
+  <div>
+    <button onClick={() => increment()}>Increment</button>
+    <button onClick={() => incrementAsync()}>Async Increment</button>
+    <Counter count={0}/>
+    <button onClick={() => decrement()}>Decrement</button>
+    <button onClick={() => decrementAndLog()}>Decrement with Log</button>
+  </div>
+)
 
 describe('App', () => {
   it('has the DOM tree correctly', () => {

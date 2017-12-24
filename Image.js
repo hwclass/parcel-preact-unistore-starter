@@ -1,9 +1,7 @@
 import { h } from 'preact'
 
-import imageURL from './images/funny_cat.jpg'
-
-const Image = () => (
-  <img src={imageURL}/>
+const Image = ({ url }) => (
+  <img src={url}/>
 )
 
 export default Image
