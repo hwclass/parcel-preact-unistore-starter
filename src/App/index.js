@@ -40,6 +40,12 @@ export const App = connect('count', actions)(
   )
 )
 
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('../sw.js')
+    .then(function() { console.log("Service Worker Registered"); });
+}
+
 export default () => (
   <Provider store={store}>
     <App />

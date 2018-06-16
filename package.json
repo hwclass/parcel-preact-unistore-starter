@@ -19,8 +19,11 @@
   "author": "Baris Guler <harderworking.class@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^5.6.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.17.0",
+    "serviceworker-cache-polyfill": "^4.0.0",
     "unistore": "^3.0.2"
   },
   "devDependencies": {
