@@ -1,7 +1,7 @@
 {
   "plugins": {
     "posthtml-img-autosize": {
-      "root": "./images"
+      "root": "./static/img"
     }
   }
 }

@@ -5,7 +5,7 @@ import { Provider, connect } from 'unistore/preact'
 import Header from '../components/Header/'
 import Image from '../components/Image/'
 import Counter from '../Counter/'
-import '../../main.css'
+import '../../static/css/main.css'
 
 let store = createStore({ count: 0 })
 

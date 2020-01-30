@@ -10,7 +10,7 @@
   "scripts": {
     "start": "parcel index.html",
     "dev": "parcel watch index.html",
-    "prod": "parcel build index.js",
+    "prod": "parcel build ./src/index.js",
     "test": "jest",
     "lint": "eslint . --cache --fix",
     "prettify": "prettier --single-quote --trailing-comma all --write ./**/*.js",
@@ -49,7 +49,7 @@
   "posthtml": {
     "plugins": {
       "posthtml-img-autosize": {
-        "root": "./images"
+        "root": "./static/img"
       }
     }
   }
