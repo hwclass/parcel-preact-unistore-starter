@@ -35,7 +35,7 @@ export const App = connect('count', actions)(
       <Counter count={count}/>
       <button onClick={decrement}>Decrement</button>
       <button onClick={decrementAndLog}>Decrement with Log</button>
-      <Image url="./images/funny_cat.jpg"/>
+      <Image url="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"/>
     </div>
   )
 )
