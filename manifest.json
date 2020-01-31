@@ -2,16 +2,19 @@
   "name": "Parcel Preact Starter",
   "short_name": "Parcel Preact",
   "description": "Starter pack for lightning-fast prototyping and small/medium size project structure",
-  "icons": [{
-    "src": "static/icon/android-chrome-192x192.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }, {
-    "src": "static/icon/android-chrome-512x512.png",
-    "type": "image/png",
-    "sizes": "512x512"
-  }],
-  "start_url": "./?utm_source=web_app_manifest",
+  "icons": [
+    {
+      "src": "./static/icon/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./static/icon/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=web_app_manifest",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#673ab8",

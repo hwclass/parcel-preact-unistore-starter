@@ -1,10 +1,10 @@
 {
   "name": "parcel-preact-unistore-starter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Starter pack for lightning-fast prototyping and small/medium size project structures",
   "main": "index.js",
   "engines": {
-    "node": ">=8.0.0",
+    "node": ">=10.0.0",
     "npm": ">=5.0.0"
   },
   "scripts": {
@@ -19,38 +19,42 @@
   "author": "Baris Guler <harderworking.class@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "i": "^0.3.6",
-    "npm": "^5.6.0",
-    "preact": "^8.2.7",
-    "preact-compat": "^3.17.0",
-    "serviceworker-cache-polyfill": "^4.0.0",
-    "unistore": "^3.0.2"
+    "preact": "^10.2.1",
+    "preact-compat": "^3.19.0",
+    "preact-render-to-string": "^5.1.4",
+    "unistore": "^3.5.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^7.2.3",
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.0.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-preact": "^1.1.0",
-    "eslint": "^4.13.1",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-preact": "^2.0.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.5.1",
     "html-looks-like": "^1.0.3",
-    "jest": "^22.0.1",
-    "node-sass": "^4.7.2",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
     "parcel-bundler": "^1.2.1",
     "post-load-plugins": "0.0.16",
     "postcss-modules": "^1.1.0",
-    "posthtml": "^0.11.0",
-    "posthtml-cli": "^0.3.1",
+    "posthtml": "^0.12.0",
+    "posthtml-cli": "^0.5.2",
     "posthtml-img-autosize": "^0.1.1",
-    "preact-render-to-string": "^3.7.0",
-    "prettier": "^1.9.2"
+    "prettier": "^1.9.2",
+    "pretty-quick": "^2.0.1"
   },
   "posthtml": {
     "plugins": {
       "posthtml-img-autosize": {
         "root": "./static/img"
       }
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
     }
   }
 }
